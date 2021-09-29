@@ -5,16 +5,25 @@
   "url": "https://github.com/CCob/nodebb-plugin-onesignal",
   "library": "./library.js",
   "hooks": [
-    { "hook": "static:app.load", "method": "init" },
-    { "hook": "filter:admin.header.build", "method": "addMenuItem" },
-    { "hook": "action:notification.pushed", "method": "push" },
-    { "hook": "filter:user.profileMenu", "method": "addProfileItem" },
-    { "hook": "filter:manifest.build", "method": "getManifest" }
+    { "hook": "static:app.load", "method": "hooks.statics.load" },
+    { "hook": "filter:admin.header.build", "method": "hooks.filters.adminHeaderBuild" },
+    { "hook": "action:notification.pushed", "method": "hooks.actions.notificationPushed" },
+    { "hook": "filter:user.customSettings", "method": "hooks.filters.userCustomSettings"},
+    { "hook": "filter:user.saveSettings", "method": "hooks.filters.userSaveSettings"}
   ],
-  "scripts": ["lib/client-settings.js", "static/lib/ClientSide.js"],
+  "scripts": [
+    "client/client-settings.js",
+    "client/client-main.js"
+  ],
+  "acpScripts": [
+    "client/admin.js"
+  ],
   "staticDirs": {
     "static": "./static"
   },
-  "less": ["static/style.less"],
-  "templates": "static/templates"
+  "less": [
+    "less/style.less"
+  ],
+  "templates": "templates",
+  "languages": "languages"
 }

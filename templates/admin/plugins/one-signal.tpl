@@ -1,4 +1,4 @@
-<div class="row onesignal">
+<div class="row one-signal">
 	<div class="col-lg-9">
 		<div class="panel panel-default">
 			<div class="panel-heading"><i class="fa fa-mobile"></i> OneSignal Notifications</div>
@@ -18,7 +18,7 @@
 
 				<div class="row">
 					<div class="col-sm-6 well">
-						<form class="form onesignal-settings">
+						<form class="form one-signal-settings">
 							<div class="form-group">
 								<label for="secret">REST API Key</label>
 								<input type="text" class="form-control" id="secret" name="secret" />
@@ -27,12 +27,16 @@
 								<label for="id">Application ID</label>
 								<input type="text" class="form-control" id="id" name="id" />
 							</div>
+							<div class="form-group">
+								<label for="safari_web_id">Safari Web ID</label>
+								<input type="text" class="form-control" id="safari_web_id" name="safari_web_id" />
+							</div>
 						</form>
 					</div>
 					<div class="col-sm-6">
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								Users Associated with OneSignal <span class="label label-info">{numAssoc}</span>
+								Users Associated with OneSignal <span class="label label-info">{usersCount}</span>
 							</div>
 							<div class="panel-body">
 								<ul class="users">
@@ -58,23 +62,3 @@
 		</div>
 	</div>
 </div>
-
-<script type="text/javascript">
-	require(['settings'], function(Settings) {
-		Settings.load('onesignal', $('.onesignal-settings'));
-
-		$('#save').on('click', function() {
-			Settings.save('onesignal', $('.onesignal-settings'), function() {
-				app.alert({
-					type: 'success',
-					alert_id: 'onesignal-saved',
-					title: 'Reload Required',
-					message: 'Please reload your NodeBB to complete configuration of the OneSignal plugin',
-					clickfn: function() {
-						socket.emit('admin.reload');
-					}
-				})
-			});
-		});
-	});
-</script>

@@ -1,0 +1,21 @@
+{
+  "tip.state.unsubscribed": "Подписаться на уведомления",
+  "tip.state.subscribed": "Вы подписаны на уведомления",
+  "tip.state.blocked": "Вы заблокировали уведомления",
+  "message.prenotify": "Нажмите, чтобы подписаться на уведомления",
+  "message.action.subscribed": "Спасибо за подписку!",
+  "message.action.resubscribed": "Вы подписаны на уведомления",
+  "message.action.unsubscribed": "Вы больше не будете получать уведомления",
+  "dialog.main.title": "Управление уведомлениями сайта",
+  "dialog.main.button.subscribe": "ПОДПИСАТЬСЯ",
+  "dialog.main.button.unsubscribe": "ОТПИСАТЬСЯ",
+  "dialog.blocked.title": "Разблокировать уведомления",
+  "dialog.blocked.message": "Следуйте этим инструкциям, чтобы разрешить уведомления:",
+
+  "settings.title": "Уведомления в браузере",
+  "settings.enable": "Включить уведомления в браузере",
+  "settings.send-test": "Отправить тестовое уведомление",
+	"settings.send-test.title": "Тестовое уведомление",
+	"settings.send-test.content": "Если вы получили это, то значит уведомления работают!",
+	"settings.send-test.sent": "Тестовое уведомление отправлено"
+}
