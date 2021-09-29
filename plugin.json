@@ -1,8 +1,8 @@
 {
-  "id": "nodebb-plugin-onesignal",
+  "id": "nodebb-plugin-one-signal",
   "name": "OneSignal Notifications",
   "description": "Allows NodeBB to interface with the OneSignal service in order to provide push notifications to OneSignal applications and devices",
-  "url": "https://github.com/CCob/nodebb-plugin-onesignal",
+  "url": "https://github.com/ariastel/nodebb-plugin-one-signal",
   "library": "./library.js",
   "hooks": [
     { "hook": "static:app.load", "method": "hooks.statics.load" },

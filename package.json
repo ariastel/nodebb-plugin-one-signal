@@ -1,11 +1,11 @@
 {
-  "name": "nodebb-plugin-onesignal",
-  "version": "4.1.6",
+  "name": "@ariastel/nodebb-plugin-one-signal",
+  "version": "0.0.1",
   "description": "Allows NodeBB to interface with the OneSignal service in order to provide push notifications to OneSignal applications and devices",
   "main": "library.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ReyKoxha/nodebb-plugin-onesignal"
+    "url": "https://github.com/ariastel/nodebb-plugin-one-signal"
   },
   "keywords": [
     "nodebb",
@@ -16,24 +16,26 @@
   "author": {
     "name": "CCob"
   },
+  "contributors": [
+    "Ariastel Team <ariastel@iamantosik.me> (https://github.com/ariastel)"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ReyKoxha/nodebb-plugin-onesignal/issues"
+    "url": "https://github.com/ariastel/nodebb-plugin-one-signal/issues"
   },
   "scripts": {
     "lint": "eslint ."
   },
   "dependencies": {
-    "escape-html": "^1.0.3",
-    "lru-cache": "^2.5.0",
-    "striptags": "^3.1.1",
-    "undici": "^4.7.0",
-    "unescape-html": "^1.1.0"
+    "undici": "^4.7.0"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
     "eslint-config-nodebb": "^0.0.2",
     "eslint-plugin-import": "^2.24.2"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "nbbpm": {
     "compatibility": "^1.18.x"
