@@ -8,7 +8,7 @@ $(document).ready(() => {
 
 	$.getScript('https://cdn.onesignal.com/sdks/OneSignalSDK.js', () => {
 		require(['translator'], function (translator) {
-			socket.emit('plugins.one-signal.settings.onesignal', { language: translator.getLanguage() }, (err, settings) => {
+			socket.emit('plugins.one-signal.onesignal', { language: translator.getLanguage() }, (err, settings) => {
 				if (err) {
 					console.error(err);
 					return;
@@ -17,6 +17,9 @@ $(document).ready(() => {
 				const OneSignal = window.OneSignal || [];
 				OneSignal.push(function () {
 					OneSignal.setExternalUserId(String(app.user.uid));
+					OneSignal.SERVICE_WORKER_PARAM = { scope: '/one-signal-sdk/' };
+					OneSignal.SERVICE_WORKER_PATH = 'one-signal-sdk/OneSignalSDKWorker.js';
+					OneSignal.SERVICE_WORKER_UPDATER_PATH = 'one-signal-sdk/OneSignalSDKUpdaterWorker.js';
 					OneSignal.init({
 						appId: settings.app_id,
 						safari_web_id: settings.safari_web_id,

@@ -22,8 +22,8 @@ const OneSignalPlugin = {
 				app = params.app;
 
 				routesHelpers.setupAdminPageRoute(router, `/admin/plugins/${constants.PLUGIN_TOKEN}`, middleware, [], controllers.renderACP);
-				router.get('/OneSignalSDKWorker.js', controllers.OneSignalSDKWorker);
-				router.get('/OneSignalSDKUpdaterWorker.js', controllers.OneSignalSDKUpdaterWorker);
+				router.get('/one-signal-sdk/OneSignalSDKWorker.js', controllers.OneSignalSDKWorker);
+				router.get('/one-signal-sdk/OneSignalSDKUpdaterWorker.js', controllers.OneSignalSDKUpdaterWorker);
 
 				OneSignalPlugin.config = await meta.settings.get(constants.PLUGIN_TOKEN)
 					.catch((err) => {
