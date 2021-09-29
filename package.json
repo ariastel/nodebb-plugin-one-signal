@@ -1,6 +1,6 @@
 {
   "name": "@ariastel/nodebb-plugin-one-signal",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Allows NodeBB to interface with the OneSignal service in order to provide push notifications to OneSignal applications and devices",
   "main": "library.js",
   "repository": {
