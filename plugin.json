@@ -21,9 +21,6 @@
   "staticDirs": {
     "static": "./static"
   },
-  "less": [
-    "less/style.less"
-  ],
   "templates": "templates",
   "languages": "languages"
 }

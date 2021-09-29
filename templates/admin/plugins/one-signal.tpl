@@ -17,7 +17,7 @@
 				</ol>
 
 				<div class="row">
-					<div class="col-sm-6 well">
+					<div class="col-sm-12 well">
 						<form class="form one-signal-settings">
 							<div class="form-group">
 								<label for="secret">REST API Key</label>
@@ -32,22 +32,6 @@
 								<input type="text" class="form-control" id="safari_web_id" name="safari_web_id" />
 							</div>
 						</form>
-					</div>
-					<div class="col-sm-6">
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								Users Associated with OneSignal <span class="label label-info">{usersCount}</span>
-							</div>
-							<div class="panel-body">
-								<ul class="users">
-									<!-- BEGIN users -->
-									<li>
-										<img src="{users.picture}" title="{users.username}" />
-									</li>
-									<!-- END users -->
-								</ul>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>

@@ -3,7 +3,7 @@
 const constants = require('./lib/constants');
 const controllers = require('./lib/controllers');
 const logger = require('./lib/logger');
-const { db, meta, routesHelpers, SocketPlugins } = require('./lib/nodebb');
+const { meta, routesHelpers, SocketPlugins } = require('./lib/nodebb');
 const onesignal = require('./lib/onesignal');
 const sockets = require('./lib/sockets');
 
