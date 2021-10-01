@@ -1,0 +1,20 @@
+{
+	"tip.state.unsubscribed": "הירשם לקבלת התראות בדפדפן",
+	"tip.state.subscribed": "אתה רשום לקבלת התראות בדפדפן",
+	"tip.state.blocked": "חסמת בדפדפן את קבלת ההתראות",
+	"message.prenotify": "לחץ כאן כדי להירשם לקבלת התראות בדפדפן",
+	"message.action.subscribed": "תודה שנרשמת!",
+	"message.action.resubscribed": "נרשמת לקבלת התראות בדפדפן",
+	"message.action.unsubscribed": "לא תקבל יותר התראות בדפדפן",
+	"dialog.main.title": "נהל התראות אתר זה",
+	"dialog.main.button.subscribe": "רשום",
+	"dialog.main.button.unsubscribe": "לא רשום",
+	"dialog.blocked.title": "ההתראות חסומות",
+	"dialog.blocked.message": "עקוב אחרי ההוראות הבאות על מנת לאפשר את ההתראות בדפדפן",
+	"settings.title": "התראות מהדפדפן",
+	"settings.enable": "אפשר קבלת התראות ישירות מהדפדן",
+	"settings.send-test": "שלח התראת בדיקה",
+	"settings.send-test.title": "התראת בדיקה",
+	"settings.send-test.content": "אם קיבלת את ההודעה הזו ההתראות עובדות!",
+	"settings.send-test.sent": "נשלחה הודעת בדיקה"
+}
